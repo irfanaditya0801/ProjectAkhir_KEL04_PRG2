@@ -16,5 +16,17 @@ namespace ProjectAkhir_KEL04_PRG2
         {
             InitializeComponent();
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            if (guna2TextBox1.Text=="admin" && guna2TextBox2.Text=="admin")
+            {
+                MessageBox.Show("Login Successful!");
+            }
+            else
+            {
+                MessageBox.Show("Login Failed Try again.");
+            }
+        }
     }
 }
