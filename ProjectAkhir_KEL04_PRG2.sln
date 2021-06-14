@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1433
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAkhir_KEL04_PRG2", "ProjectAkhir_KEL04_PRG2\ProjectAkhir_KEL04_PRG2.csproj", "{2C1BD912-3741-44E4-A7FA-1EBB646F589C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C1BD912-3741-44E4-A7FA-1EBB646F589C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1BD912-3741-44E4-A7FA-1EBB646F589C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1BD912-3741-44E4-A7FA-1EBB646F589C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1BD912-3741-44E4-A7FA-1EBB646F589C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD57CCA2-D223-412F-B30C-268CF61DF871}
+	EndGlobalSection
+EndGlobal
