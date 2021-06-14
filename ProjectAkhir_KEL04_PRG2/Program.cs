@@ -16,7 +16,7 @@ namespace ProjectAkhir_KEL04_PRG2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CRUDKamera());
+            Application.Run(new Form1());
         }
     }
 }
