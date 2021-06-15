@@ -320,7 +320,7 @@ namespace ProjectAkhir_KEL04_PRG2
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 380);
+            this.label1.Location = new System.Drawing.Point(92, 380);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(441, 64);
             this.label1.TabIndex = 1;
