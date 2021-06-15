@@ -8,12 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-namespace ProjectAkhir_KEL04_PRG2
+namespace ProjectAkhir_KEL04_PRG2.CRUD
 {
-    public partial class cobalogin : Form
+    public partial class CRUDcctv : Form
     {
-        public cobalogin()
+        public CRUDcctv()
         {
             InitializeComponent();
         }

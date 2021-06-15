@@ -1,7 +1,7 @@
 ﻿
 namespace ProjectAkhir_KEL04_PRG2
 {
-	partial class Form1
+	partial class Login
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -39,6 +39,7 @@ namespace ProjectAkhir_KEL04_PRG2
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.gunaTransfarantPictureBox6 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransfarantPictureBox5 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransfarantPictureBox4 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
@@ -47,7 +48,6 @@ namespace ProjectAkhir_KEL04_PRG2
             this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.gunaLinePanel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -89,7 +89,7 @@ namespace ProjectAkhir_KEL04_PRG2
             this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(47)))), ((int)(((byte)(218)))));
             this.gunaLabel3.Location = new System.Drawing.Point(142, 456);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(112, 25);
+            this.gunaLabel3.Size = new System.Drawing.Size(74, 15);
             this.gunaLabel3.TabIndex = 13;
             this.gunaLabel3.Text = "Social Media";
             // 
@@ -100,7 +100,7 @@ namespace ProjectAkhir_KEL04_PRG2
             this.gunaLinkLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLinkLabel3.Location = new System.Drawing.Point(162, 419);
             this.gunaLinkLabel3.Name = "gunaLinkLabel3";
-            this.gunaLinkLabel3.Size = new System.Drawing.Size(49, 25);
+            this.gunaLinkLabel3.Size = new System.Drawing.Size(32, 15);
             this.gunaLinkLabel3.TabIndex = 12;
             this.gunaLinkLabel3.TabStop = true;
             this.gunaLinkLabel3.Text = "Help";
@@ -112,7 +112,7 @@ namespace ProjectAkhir_KEL04_PRG2
             this.gunaLinkLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLinkLabel2.Location = new System.Drawing.Point(118, 319);
             this.gunaLinkLabel2.Name = "gunaLinkLabel2";
-            this.gunaLinkLabel2.Size = new System.Drawing.Size(171, 25);
+            this.gunaLinkLabel2.Size = new System.Drawing.Size(114, 15);
             this.gunaLinkLabel2.TabIndex = 6;
             this.gunaLinkLabel2.TabStop = true;
             this.gunaLinkLabel2.Text = "Team and Condition";
@@ -144,7 +144,7 @@ namespace ProjectAkhir_KEL04_PRG2
             this.gunaLinkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLinkLabel1.Location = new System.Drawing.Point(209, 238);
             this.gunaLinkLabel1.Name = "gunaLinkLabel1";
-            this.gunaLinkLabel1.Size = new System.Drawing.Size(144, 25);
+            this.gunaLinkLabel1.Size = new System.Drawing.Size(94, 15);
             this.gunaLinkLabel1.TabIndex = 4;
             this.gunaLinkLabel1.TabStop = true;
             this.gunaLinkLabel1.Text = "Forget Password";
@@ -156,7 +156,7 @@ namespace ProjectAkhir_KEL04_PRG2
             this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(23)))), ((int)(((byte)(104)))));
             this.gunaLabel2.Location = new System.Drawing.Point(141, 89);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(104, 45);
+            this.gunaLabel2.Size = new System.Drawing.Size(69, 30);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Login";
             // 
@@ -179,7 +179,7 @@ namespace ProjectAkhir_KEL04_PRG2
             this.gunaLabel1.ForeColor = System.Drawing.Color.White;
             this.gunaLabel1.Location = new System.Drawing.Point(28, 1);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(217, 40);
+            this.gunaLabel1.Size = new System.Drawing.Size(140, 25);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Welcome Back";
             // 
@@ -195,6 +195,17 @@ namespace ProjectAkhir_KEL04_PRG2
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(597, 530);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(61, 387);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(301, 44);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "EDITH DIGITAL";
             // 
             // gunaTransfarantPictureBox6
             // 
@@ -323,25 +334,14 @@ namespace ProjectAkhir_KEL04_PRG2
             this.guna2TextBox1.Size = new System.Drawing.Size(262, 36);
             this.guna2TextBox1.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 387);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 64);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "EDITH DIGITAL";
-            // 
-            // Form1
+            // Login
             // 
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(950, 530);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.guna2Panel1.ResumeLayout(false);

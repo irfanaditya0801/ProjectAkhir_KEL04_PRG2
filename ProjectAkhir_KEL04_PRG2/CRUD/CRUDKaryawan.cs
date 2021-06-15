@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectAkhir_KEL04_PRG2
 {
-    public partial class Form2 : Form
+    public partial class CRUDKaryawan : Form
     {
-        public Form2()
+        public CRUDKaryawan()
         {
             InitializeComponent();
         }

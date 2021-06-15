@@ -123,6 +123,16 @@ namespace ProjectAkhir_KEL04_PRG2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap active_search_png {
+            get {
+                object obj = ResourceManager.GetObject("active-search.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Asset_2 {
             get {
                 object obj = ResourceManager.GetObject("Asset_2", resourceCulture);
@@ -236,6 +246,16 @@ namespace ProjectAkhir_KEL04_PRG2.Properties {
         internal static System.Drawing.Bitmap play_button_48px {
             get {
                 object obj = ResourceManager.GetObject("play_button_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search {
+            get {
+                object obj = ResourceManager.GetObject("Search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

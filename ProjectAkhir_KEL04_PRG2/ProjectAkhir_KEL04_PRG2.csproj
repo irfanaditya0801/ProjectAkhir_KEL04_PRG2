@@ -58,28 +58,55 @@
     <Compile Include="cobalogin.Designer.cs">
       <DependentUpon>cobalogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="CRUD\CRUDAccKamera.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CRUD\CRUDAccKamera.Designer.cs">
+      <DependentUpon>CRUDAccKamera.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="CRUD\CRUDcctv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="CRUD\CRUDcctv.Designer.cs">
+      <DependentUpon>CRUDcctv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\CRUDKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\CRUDKaryawan.Designer.cs">
+      <DependentUpon>CRUDKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\CRUDKategoriAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\CRUDKategoriAcc.Designer.cs">
+      <DependentUpon>CRUDKategoriAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="cobalogin.resx">
       <DependentUpon>cobalogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CRUD\CRUDAccKamera.resx">
+      <DependentUpon>CRUDAccKamera.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="CRUD\CRUDcctv.resx">
+      <DependentUpon>CRUDcctv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\CRUDKaryawan.resx">
+      <DependentUpon>CRUDKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\CRUDKategoriAcc.resx">
+      <DependentUpon>CRUDKategoriAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +133,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\active-search.png.crdownload" />
     <None Include="Resources\d1a09bedb131158b92839f9a9734f20b.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +195,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Asset_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
