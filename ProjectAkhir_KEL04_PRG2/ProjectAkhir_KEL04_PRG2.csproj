@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cobalogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cobalogin.Designer.cs">
-      <DependentUpon>cobalogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="CRUD\CRUDAccKamera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,9 +84,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="cobalogin.resx">
-      <DependentUpon>cobalogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CRUD\CRUDAccKamera.resx">
       <DependentUpon>CRUDAccKamera.cs</DependentUpon>
     </EmbeddedResource>
