@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjectAkhir_KEL04_PRG2.CRUD
+namespace ProjectAkhir_KEL04_PRG2
 {
-    public partial class CRUDcctv : Form
+    public partial class Dashboard : Form
     {
-        public CRUDcctv()
+        public Dashboard()
         {
             InitializeComponent();
-        }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -64,6 +64,18 @@
     <Compile Include="CRUD\CRUDcctv.Designer.cs">
       <DependentUpon>CRUDcctv.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD\CRUDJenisKamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\CRUDJenisKamera.Designer.cs">
+      <DependentUpon>CRUDJenisKamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\CRUDKamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\CRUDKamera.Designer.cs">
+      <DependentUpon>CRUDKamera.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUD\CRUDKaryawan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,24 @@
     </Compile>
     <Compile Include="CRUD\CRUDKategoriAcc.Designer.cs">
       <DependentUpon>CRUDKategoriAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\CRUDMerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\CRUDMerk.Designer.cs">
+      <DependentUpon>CRUDMerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\CRUDUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\CRUDUser.Designer.cs">
+      <DependentUpon>CRUDUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -90,11 +120,26 @@
     <EmbeddedResource Include="CRUD\CRUDcctv.resx">
       <DependentUpon>CRUDcctv.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\CRUDJenisKamera.resx">
+      <DependentUpon>CRUDJenisKamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\CRUDKamera.resx">
+      <DependentUpon>CRUDKamera.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CRUD\CRUDKaryawan.resx">
       <DependentUpon>CRUDKaryawan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD\CRUDKategoriAcc.resx">
       <DependentUpon>CRUDKategoriAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\CRUDMerk.resx">
+      <DependentUpon>CRUDMerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\CRUDUser.resx">
+      <DependentUpon>CRUDUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

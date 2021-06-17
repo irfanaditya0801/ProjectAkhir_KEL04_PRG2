@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjectAkhir_KEL04_PRG2.CRUD
 {
-    public partial class CRUDcctv : Form
+    public partial class CRUDJenisKamera : Form
     {
-        public CRUDcctv()
+        public CRUDJenisKamera()
         {
             InitializeComponent();
-        }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
