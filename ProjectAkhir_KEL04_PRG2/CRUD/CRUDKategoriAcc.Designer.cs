@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnHapus = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new Guna.UI2.WinForms.Guna2CircleButton();
             this.dgKategoriAcc = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnUbah = new Guna.UI2.WinForms.Guna2Button();
@@ -42,7 +43,6 @@
             this.txtNama = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnHapus = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgKategoriAcc)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,31 @@
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
+            // btnHapus
+            // 
+            this.btnHapus.AutoRoundedCorners = true;
+            this.btnHapus.BackColor = System.Drawing.Color.Transparent;
+            this.btnHapus.BorderColor = System.Drawing.Color.Transparent;
+            this.btnHapus.BorderRadius = 16;
+            this.btnHapus.CheckedState.Parent = this.btnHapus;
+            this.btnHapus.CustomImages.Parent = this.btnHapus;
+            this.btnHapus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHapus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHapus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHapus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHapus.DisabledState.Parent = this.btnHapus;
+            this.btnHapus.FillColor = System.Drawing.Color.RoyalBlue;
+            this.btnHapus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHapus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnHapus.HoverState.Parent = this.btnHapus;
+            this.btnHapus.Location = new System.Drawing.Point(478, 173);
+            this.btnHapus.Name = "btnHapus";
+            this.btnHapus.ShadowDecoration.Parent = this.btnHapus;
+            this.btnHapus.Size = new System.Drawing.Size(102, 35);
+            this.btnHapus.TabIndex = 17;
+            this.btnHapus.Text = "Hapus";
+            this.btnHapus.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            // 
             // btnSearch
             // 
             this.btnSearch.BorderColor = System.Drawing.Color.Transparent;
@@ -102,30 +127,30 @@
             // 
             // dgKategoriAcc
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgKategoriAcc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgKategoriAcc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgKategoriAcc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgKategoriAcc.BackgroundColor = System.Drawing.Color.White;
             this.dgKategoriAcc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgKategoriAcc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgKategoriAcc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgKategoriAcc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgKategoriAcc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgKategoriAcc.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgKategoriAcc.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgKategoriAcc.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgKategoriAcc.EnableHeadersVisualStyles = false;
             this.dgKategoriAcc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgKategoriAcc.Location = new System.Drawing.Point(55, 173);
@@ -318,31 +343,6 @@
             this.txtID.ShadowDecoration.Parent = this.txtID;
             this.txtID.Size = new System.Drawing.Size(200, 36);
             this.txtID.TabIndex = 0;
-            // 
-            // btnHapus
-            // 
-            this.btnHapus.AutoRoundedCorners = true;
-            this.btnHapus.BackColor = System.Drawing.Color.Transparent;
-            this.btnHapus.BorderColor = System.Drawing.Color.Transparent;
-            this.btnHapus.BorderRadius = 16;
-            this.btnHapus.CheckedState.Parent = this.btnHapus;
-            this.btnHapus.CustomImages.Parent = this.btnHapus;
-            this.btnHapus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHapus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHapus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHapus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHapus.DisabledState.Parent = this.btnHapus;
-            this.btnHapus.FillColor = System.Drawing.Color.RoyalBlue;
-            this.btnHapus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnHapus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnHapus.HoverState.Parent = this.btnHapus;
-            this.btnHapus.Location = new System.Drawing.Point(478, 173);
-            this.btnHapus.Name = "btnHapus";
-            this.btnHapus.ShadowDecoration.Parent = this.btnHapus;
-            this.btnHapus.Size = new System.Drawing.Size(102, 35);
-            this.btnHapus.TabIndex = 17;
-            this.btnHapus.Text = "Hapus";
-            this.btnHapus.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
             // 
             // CRUDKategoriAcc
             // 
