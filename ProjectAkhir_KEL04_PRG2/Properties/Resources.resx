@@ -118,73 +118,103 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="920c3bc1396826b759c921c858bee644" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\920c3bc1396826b759c921c858bee644.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="facebook_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-document-72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-document-72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0de994a2d01b0223f3d670c00f960a94" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0de994a2d01b0223f3d670c00f960a94.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="14db04c315e07956ccd677be4ef63e16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\14db04c315e07956ccd677be4ef63e16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1bbf21f520ceccd11ba837fd7521e83c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1bbf21f520ceccd11ba837fd7521e83c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-home-72 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-home-72 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="key_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4cea9a1f74d651923cbb7613e07ef958" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4cea9a1f74d651923cbb7613e07ef958.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="active-search.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\active-search.png.crdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7e3c412c6c0d287e1642e7dfd2f568c4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7e3c412c6c0d287e1642e7dfd2f568c4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="e3a562d50f81479b6388a4069b43cddc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e3a562d50f81479b6388a4069b43cddc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="920c3bc1396826b759c921c858bee644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\920c3bc1396826b759c921c858bee644.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="twitter_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\twitter_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="play_button_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play_button_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="telegram_app_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\telegram_app_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="e3a562d50f81479b6388a4069b43cddc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e3a562d50f81479b6388a4069b43cddc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bf09f9965df5d6654be6fbf99982c055" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bf09f9965df5d6654be6fbf99982c055.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="d1a09bedb131158b92839f9a9734f20b" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\d1a09bedb131158b92839f9a9734f20b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="facebook_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\facebook_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1bbf21f520ceccd11ba837fd7521e83c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1bbf21f520ceccd11ba837fd7521e83c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="instagram_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\instagram_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Asset_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Asset_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Asset_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Asset_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="key_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="d1a09bedb131158b92839f9a9734f20b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d1a09bedb131158b92839f9a9734f20b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="twitter_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\twitter_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-logout-rounded-down-72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-logout-rounded-down-72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Asset_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Asset_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="telegram_app_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telegram_app_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Asset_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Asset_23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4cea9a1f74d651923cbb7613e07ef958" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4cea9a1f74d651923cbb7613e07ef958.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-home-72 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-home-72 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-shopping-cart-72 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-shopping-cart-72 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14db04c315e07956ccd677be4ef63e16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14db04c315e07956ccd677be4ef63e16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-home-72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-home-72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-home-72 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-home-72 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7e3c412c6c0d287e1642e7dfd2f568c4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7e3c412c6c0d287e1642e7dfd2f568c4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Asset_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Asset_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="active-search.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\active-search.png.crdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bf09f9965df5d6654be6fbf99982c055" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bf09f9965df5d6654be6fbf99982c055.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0de994a2d01b0223f3d670c00f960a94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0de994a2d01b0223f3d670c00f960a94.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-sign-out-72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-sign-out-72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-supplier-72 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-supplier-72 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
