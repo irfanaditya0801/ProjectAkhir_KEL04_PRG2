@@ -118,6 +118,7 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
 
         private void CRUDUser_Load(object sender, EventArgs e)
         {
+          
 
         }
 
@@ -197,9 +198,9 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
 
                 SqlCommand add = new SqlCommand("sp_updateuser", con);
                 add.CommandType = CommandType.StoredProcedure;
-               // add.Parameters.AddWithValue("id_user", txtID.Text);
+                add.Parameters.AddWithValue("id_user", txtID.Text);
                 add.Parameters.AddWithValue("nama_user", txtNama.Text);
-                add.Parameters.AddWithValue("jeniskelamin", cbJenisKel.SelectedValue);
+                add.Parameters.AddWithValue("jeniskelamin", cbJenisKel.SelectedItem);
                 add.Parameters.AddWithValue("alamat", txtAlamat.Text);
                 add.Parameters.AddWithValue("jabatan", cbJabatan.Text);
                 add.Parameters.AddWithValue("username", txtusername.Text);
@@ -221,6 +222,46 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
             {
                 MessageBox.Show("Error : " + ex.Message);
             }
+
+        }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+
+            DialogResult valid = MessageBox.Show("ingin menghapus user ?", "Informasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (valid == DialogResult.OK)
+            {
+                SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
+
+                try
+                {
+                    con.Open();
+                    SqlCommand del = new SqlCommand("sp_deleteuser", con);
+                    del.CommandType = CommandType.StoredProcedure;
+
+                    del.Parameters.AddWithValue("id_user", txtID.Text);
+
+                    del.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil dihapus", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Data gagal di hapus : " + ex.Message);
+                }
+                
+            }
+            
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void tblUserBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
 
         }
     }
