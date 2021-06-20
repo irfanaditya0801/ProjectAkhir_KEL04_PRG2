@@ -60,7 +60,7 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            if (txtNama.Text == "" || txtHarga.Text == "" ||  txtJumlah.Text == "")
+            if (txtNama.Text == "" || txtHarga.Text == "" || txtJumlah.Text == "")
             {
                 MessageBox.Show("Lengkapi Data CCTV!!", "Peringatan!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -72,7 +72,7 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
                 add.CommandType = CommandType.StoredProcedure;
 
                 string syntax = "SELECT TOP  1 id_cctv from tblCCTV ORDER BY id_cctv desc";
-                string id = AutoID("cctv", syntax);
+                string id = AutoID("CCTV", syntax);
 
 
 
@@ -80,7 +80,7 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
                 add.Parameters.AddWithValue("nama_cctv", txtNama.Text);
                 add.Parameters.AddWithValue("harga", txtHarga.Text);
                 add.Parameters.AddWithValue("jumlah", txtJumlah.Text);
-                
+
 
                 try
                 {
@@ -117,7 +117,95 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
                 btnHapus.Visible = false;
                 btnSimpan.Visible = true;
             }
-        
+
+        }
+
+        private void btnUbah_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
+
+                SqlCommand add = new SqlCommand("sp_updatecctv", con);
+                add.CommandType = CommandType.StoredProcedure;
+
+                add.Parameters.AddWithValue("id_cctv", txtID.Text);
+                add.Parameters.AddWithValue("nama_cctv", txtNama.Text);
+                add.Parameters.AddWithValue("jumlah", txtJumlah.Text);
+                add.Parameters.AddWithValue("harga", txtHarga.Text);
+
+                con.Open();
+                int result = Convert.ToInt32(add.ExecuteNonQuery());
+                con.Close();
+                if (result != 0)
+                {
+                    MessageBox.Show("Update data berhasil");
+
+                }
+                else
+                {
+                    MessageBox.Show("Update data gagal!");
+                }
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message);
+            }
+        }
+    
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
+                DataTable dt = new DataTable();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM tblCCTV Where id_cctv = '" + txtID.Text + "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                txtNama.Text = dt.Rows[0]["nama_cctv"].ToString();
+                txtJumlah.Text = dt.Rows[0]["jumlah"].ToString();
+                txtHarga.Text = dt.Rows[0]["harga"].ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            DialogResult valid = MessageBox.Show("ingin menghapus kamera ?", "Informasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (valid == DialogResult.OK)
+            {
+                SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
+
+                try
+                {
+                    con.Open();
+                    SqlCommand del = new SqlCommand("sp_deleteCCTV", con);
+                    del.CommandType = CommandType.StoredProcedure;
+
+                    del.Parameters.AddWithValue("id_cctv", txtID.Text);
+
+                    del.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil dihapus", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Data gagal di hapus : " + ex.Message);
+                }
+            }
         }
     }
 }

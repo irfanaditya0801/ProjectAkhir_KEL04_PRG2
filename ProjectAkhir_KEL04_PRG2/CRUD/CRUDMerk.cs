@@ -17,7 +17,7 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
         {
             InitializeComponent();
         }
-        
+
         SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
         private SqlCommand sqlCmd;
 
@@ -89,7 +89,7 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
 
         private void cbSearch_CheckedChanged(object sender, EventArgs e)
         {
-            if(cbSearch.Checked)
+            if (cbSearch.Checked)
             {
                 labelID.Visible = true;
                 txtID.Visible = true;
@@ -106,6 +106,84 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
                 btnUbah.Visible = false;
                 btnHapus.Visible = false;
                 btnSimpan.Visible = true;
+            }
+        }
+
+        private void btnUbah_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
+
+                SqlCommand add = new SqlCommand("sp_updatemerkkamera", con);
+                add.CommandType = CommandType.StoredProcedure;
+
+                add.Parameters.AddWithValue("Id_Merk", txtID.Text);
+                add.Parameters.AddWithValue("nama_merk", txtNama.Text);
+
+                con.Open();
+                int result = Convert.ToInt32(add.ExecuteNonQuery());
+                con.Close();
+                if (result != 0)
+                {
+                    MessageBox.Show("Update data berhasil");
+
+                }
+                else
+                {
+                    MessageBox.Show("Update data gagal!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message);
+
+            }
+        }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            DialogResult valid = MessageBox.Show("ingin menghapus Merk ?", "Informasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (valid == DialogResult.OK)
+            {
+                SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
+
+                try
+                {
+                    con.Open();
+                    SqlCommand del = new SqlCommand("sp_deletemerkkamera", con);
+                    del.CommandType = CommandType.StoredProcedure;
+
+                    del.Parameters.AddWithValue("Id_Merk", txtID.Text);
+
+                    del.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil dihapus", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Data gagal di hapus : " + ex.Message);
+                }
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
+                DataTable dt = new DataTable();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM tblMerkKamera Where Id_Merk = '" + txtID.Text + "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                txtNama.Text = dt.Rows[0]["nama_merk"].ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
     }

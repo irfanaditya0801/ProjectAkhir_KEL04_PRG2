@@ -31,7 +31,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.PanelKategoriAcc = new Guna.UI2.WinForms.Guna2Panel();
+            this.CheckID = new Guna.UI2.WinForms.Guna2CheckBox();
             this.btnHapus = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new Guna.UI2.WinForms.Guna2CircleButton();
             this.dgKategoriAcc = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -41,37 +42,57 @@
             this.btnBatal = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNama = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LabelID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel1.SuspendLayout();
+            this.PanelKategoriAcc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgKategoriAcc)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Panel1
+            // PanelKategoriAcc
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.BackgroundImage = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.background;
-            this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Panel1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.btnHapus);
-            this.guna2Panel1.Controls.Add(this.btnSearch);
-            this.guna2Panel1.Controls.Add(this.dgKategoriAcc);
-            this.guna2Panel1.Controls.Add(this.btnUbah);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2Panel1.Controls.Add(this.btnSimpan);
-            this.guna2Panel1.Controls.Add(this.btnBatal);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Panel1.Controls.Add(this.txtNama);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.txtID);
-            this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Black;
-            this.guna2Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(637, 357);
-            this.guna2Panel1.TabIndex = 1;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            this.PanelKategoriAcc.BackColor = System.Drawing.Color.Transparent;
+            this.PanelKategoriAcc.BackgroundImage = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.background;
+            this.PanelKategoriAcc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanelKategoriAcc.BorderColor = System.Drawing.Color.Transparent;
+            this.PanelKategoriAcc.Controls.Add(this.CheckID);
+            this.PanelKategoriAcc.Controls.Add(this.btnHapus);
+            this.PanelKategoriAcc.Controls.Add(this.btnSearch);
+            this.PanelKategoriAcc.Controls.Add(this.dgKategoriAcc);
+            this.PanelKategoriAcc.Controls.Add(this.btnUbah);
+            this.PanelKategoriAcc.Controls.Add(this.guna2HtmlLabel3);
+            this.PanelKategoriAcc.Controls.Add(this.btnSimpan);
+            this.PanelKategoriAcc.Controls.Add(this.btnBatal);
+            this.PanelKategoriAcc.Controls.Add(this.guna2HtmlLabel2);
+            this.PanelKategoriAcc.Controls.Add(this.txtNama);
+            this.PanelKategoriAcc.Controls.Add(this.LabelID);
+            this.PanelKategoriAcc.Controls.Add(this.txtID);
+            this.PanelKategoriAcc.CustomBorderColor = System.Drawing.Color.Black;
+            this.PanelKategoriAcc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.PanelKategoriAcc.Location = new System.Drawing.Point(0, 0);
+            this.PanelKategoriAcc.Name = "PanelKategoriAcc";
+            this.PanelKategoriAcc.ShadowDecoration.Parent = this.PanelKategoriAcc;
+            this.PanelKategoriAcc.Size = new System.Drawing.Size(637, 357);
+            this.PanelKategoriAcc.TabIndex = 1;
+            this.PanelKategoriAcc.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // CheckID
+            // 
+            this.CheckID.AutoSize = true;
+            this.CheckID.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CheckID.CheckedState.BorderRadius = 0;
+            this.CheckID.CheckedState.BorderThickness = 0;
+            this.CheckID.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CheckID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.CheckID.Location = new System.Drawing.Point(147, 102);
+            this.CheckID.Name = "CheckID";
+            this.CheckID.Size = new System.Drawing.Size(58, 17);
+            this.CheckID.TabIndex = 18;
+            this.CheckID.Text = "Cari ID";
+            this.CheckID.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.CheckID.UncheckedState.BorderRadius = 0;
+            this.CheckID.UncheckedState.BorderThickness = 0;
+            this.CheckID.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.CheckID.CheckedChanged += new System.EventHandler(this.CheckID_CheckedChanged);
             // 
             // btnHapus
             // 
@@ -97,6 +118,8 @@
             this.btnHapus.TabIndex = 17;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            this.btnHapus.Visible = false;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnSearch
             // 
@@ -115,7 +138,7 @@
             this.btnSearch.Image = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.active_search_png;
             this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSearch.Location = new System.Drawing.Point(376, 64);
+            this.btnSearch.Location = new System.Drawing.Point(353, 58);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
@@ -123,6 +146,7 @@
             this.btnSearch.TabIndex = 8;
             this.btnSearch.TextFormatNoPrefix = true;
             this.btnSearch.Tile = false;
+            this.btnSearch.Visible = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgKategoriAcc
@@ -153,7 +177,7 @@
             this.dgKategoriAcc.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgKategoriAcc.EnableHeadersVisualStyles = false;
             this.dgKategoriAcc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgKategoriAcc.Location = new System.Drawing.Point(55, 173);
+            this.dgKategoriAcc.Location = new System.Drawing.Point(55, 195);
             this.dgKategoriAcc.Name = "dgKategoriAcc";
             this.dgKategoriAcc.RowHeadersVisible = false;
             this.dgKategoriAcc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -207,6 +231,7 @@
             this.btnUbah.Text = "Ubah";
             this.btnUbah.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
             this.btnUbah.Tile = true;
+            this.btnUbah.Visible = false;
             this.btnUbah.Click += new System.EventHandler(this.btnUbah_Click);
             // 
             // guna2HtmlLabel3
@@ -276,7 +301,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(55, 123);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(55, 145);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(51, 21);
             this.guna2HtmlLabel2.TabIndex = 3;
@@ -299,7 +324,7 @@
             this.txtNama.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNama.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNama.HoverState.Parent = this.txtNama;
-            this.txtNama.Location = new System.Drawing.Point(170, 119);
+            this.txtNama.Location = new System.Drawing.Point(170, 141);
             this.txtNama.Name = "txtNama";
             this.txtNama.PasswordChar = '\0';
             this.txtNama.PlaceholderText = "";
@@ -308,16 +333,16 @@
             this.txtNama.Size = new System.Drawing.Size(200, 36);
             this.txtNama.TabIndex = 2;
             // 
-            // guna2HtmlLabel1
+            // LabelID
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(55, 72);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(102, 21);
-            this.guna2HtmlLabel1.TabIndex = 1;
-            this.guna2HtmlLabel1.Text = "ID Kategori";
+            this.LabelID.BackColor = System.Drawing.Color.Transparent;
+            this.LabelID.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LabelID.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.LabelID.Location = new System.Drawing.Point(32, 66);
+            this.LabelID.Name = "LabelID";
+            this.LabelID.Size = new System.Drawing.Size(102, 21);
+            this.LabelID.TabIndex = 1;
+            this.LabelID.Text = "ID Kategori";
             // 
             // txtID
             // 
@@ -335,7 +360,7 @@
             this.txtID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtID.HoverState.Parent = this.txtID;
-            this.txtID.Location = new System.Drawing.Point(170, 65);
+            this.txtID.Location = new System.Drawing.Point(147, 59);
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
             this.txtID.PlaceholderText = "";
@@ -343,19 +368,21 @@
             this.txtID.ShadowDecoration.Parent = this.txtID;
             this.txtID.Size = new System.Drawing.Size(200, 36);
             this.txtID.TabIndex = 0;
+            this.txtID.Visible = false;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // CRUDKategoriAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 352);
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.PanelKategoriAcc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CRUDKategoriAcc";
             this.Text = "CRUDKategoriAcc";
             this.Load += new System.EventHandler(this.CRUDKategoriAcc_Load);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.PanelKategoriAcc.ResumeLayout(false);
+            this.PanelKategoriAcc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgKategoriAcc)).EndInit();
             this.ResumeLayout(false);
 
@@ -363,10 +390,10 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel PanelKategoriAcc;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtNama;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LabelID;
         private Guna.UI2.WinForms.Guna2TextBox txtID;
         private Guna.UI2.WinForms.Guna2Button btnSimpan;
         private Guna.UI2.WinForms.Guna2Button btnBatal;
@@ -375,5 +402,6 @@
         private Guna.UI2.WinForms.Guna2Button btnUbah;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Button btnHapus;
+        private Guna.UI2.WinForms.Guna2CheckBox CheckID;
     }
 }

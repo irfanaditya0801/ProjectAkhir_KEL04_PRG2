@@ -201,6 +201,12 @@
     <Compile Include="CRUD\CRUDMerk.Designer.cs">
       <DependentUpon>CRUDMerk.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD\CRUDSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\CRUDSupplier.Designer.cs">
+      <DependentUpon>CRUDSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUD\CRUDUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD\CRUDMerk.resx">
       <DependentUpon>CRUDMerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\CRUDSupplier.resx">
+      <DependentUpon>CRUDSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRUD\CRUDUser.resx">
       <DependentUpon>CRUDUser.cs</DependentUpon>
