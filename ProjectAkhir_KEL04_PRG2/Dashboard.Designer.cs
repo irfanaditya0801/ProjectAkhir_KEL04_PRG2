@@ -42,11 +42,17 @@
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Home = new System.Windows.Forms.TabPage();
+            this.ucHome1 = new ProjectAkhir_KEL04_PRG2.Page.UCHome();
+            this.Master = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.ucMaster1 = new ProjectAkhir_KEL04_PRG2.Page.UCMaster();
             this.guna2Panel1.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.bunifuPages1.SuspendLayout();
+            this.Home.SuspendLayout();
+            this.Master.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -61,6 +67,8 @@
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button5);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button4);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2Button3);
@@ -97,10 +105,10 @@
             this.guna2Button5.Image = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.icons8_sign_out_72;
             this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button5.ImageSize = new System.Drawing.Size(25, 20);
-            this.guna2Button5.Location = new System.Drawing.Point(32, 603);
+            this.guna2Button5.Location = new System.Drawing.Point(23, 602);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(160, 45);
+            this.guna2Button5.Size = new System.Drawing.Size(180, 45);
             this.guna2Button5.TabIndex = 7;
             this.guna2Button5.Text = "Logout";
             // 
@@ -117,15 +125,15 @@
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Plum;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Image = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.icons8_document_72;
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.ImageSize = new System.Drawing.Size(25, 20);
-            this.guna2Button4.Location = new System.Drawing.Point(32, 414);
+            this.guna2Button4.Location = new System.Drawing.Point(23, 411);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(160, 45);
+            this.guna2Button4.Size = new System.Drawing.Size(180, 45);
             this.guna2Button4.TabIndex = 6;
             this.guna2Button4.Text = "Laporan";
             // 
@@ -142,15 +150,15 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.Plum;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.icons8_shopping_cart_72__1_;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.ImageSize = new System.Drawing.Size(25, 20);
-            this.guna2Button3.Location = new System.Drawing.Point(34, 336);
+            this.guna2Button3.Location = new System.Drawing.Point(23, 334);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(160, 45);
+            this.guna2Button3.Size = new System.Drawing.Size(178, 45);
             this.guna2Button3.TabIndex = 5;
             this.guna2Button3.Text = "Transaksi";
             // 
@@ -167,17 +175,18 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.Plum;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Image = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.icons8_supplier_72__1_;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.ImageSize = new System.Drawing.Size(25, 20);
-            this.guna2Button2.Location = new System.Drawing.Point(32, 262);
+            this.guna2Button2.Location = new System.Drawing.Point(23, 259);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(160, 45);
+            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "Master";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -192,17 +201,18 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Plum;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.icons8_home_72__2_;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageSize = new System.Drawing.Size(25, 20);
-            this.guna2Button1.Location = new System.Drawing.Point(32, 187);
+            this.guna2Button1.Location = new System.Drawing.Point(23, 185);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(160, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "Home";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Separator1
             // 
@@ -255,24 +265,29 @@
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(228, 0);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.ShadowDecoration.Parent = this.guna2CustomGradientPanel2;
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1133, 83);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1313, 83);
             this.guna2CustomGradientPanel2.TabIndex = 1;
             // 
             // bunifuPages1
             // 
             this.bunifuPages1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.bunifuPages1.AllowTransitions = true;
-            this.bunifuPages1.Controls.Add(this.tabPage1);
-            this.bunifuPages1.Controls.Add(this.tabPage2);
-            this.bunifuPages1.Location = new System.Drawing.Point(234, 89);
+            this.bunifuPages1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuPages1.Controls.Add(this.Home);
+            this.bunifuPages1.Controls.Add(this.Master);
+            this.bunifuPages1.Controls.Add(this.tabPage3);
+            this.bunifuPages1.Controls.Add(this.tabPage4);
+            this.bunifuPages1.Location = new System.Drawing.Point(228, 89);
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
-            this.bunifuPages1.Page = this.tabPage1;
-            this.bunifuPages1.PageIndex = 0;
-            this.bunifuPages1.PageName = "tabPage1";
-            this.bunifuPages1.PageTitle = "tabPage1";
+            this.bunifuPages1.Page = this.Master;
+            this.bunifuPages1.PageIndex = 1;
+            this.bunifuPages1.PageName = "Master";
+            this.bunifuPages1.PageTitle = "Master";
             this.bunifuPages1.SelectedIndex = 0;
-            this.bunifuPages1.Size = new System.Drawing.Size(1115, 624);
+            this.bunifuPages1.Size = new System.Drawing.Size(1313, 636);
             this.bunifuPages1.TabIndex = 2;
             animation1.AnimateOnlyDifferences = false;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -292,41 +307,82 @@
             this.bunifuPages1.Transition = animation1;
             this.bunifuPages1.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
-            // tabPage1
+            // Home
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1107, 591);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.Home.Controls.Add(this.ucHome1);
+            this.Home.Location = new System.Drawing.Point(4, 4);
+            this.Home.Name = "Home";
+            this.Home.Padding = new System.Windows.Forms.Padding(3);
+            this.Home.Size = new System.Drawing.Size(1305, 603);
+            this.Home.TabIndex = 0;
+            this.Home.Text = "Home";
+            this.Home.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // ucHome1
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 67);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.ucHome1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucHome1.Location = new System.Drawing.Point(3, 3);
+            this.ucHome1.Name = "ucHome1";
+            this.ucHome1.Size = new System.Drawing.Size(1299, 597);
+            this.ucHome1.TabIndex = 0;
+            // 
+            // Master
+            // 
+            this.Master.Controls.Add(this.ucMaster1);
+            this.Master.Location = new System.Drawing.Point(4, 4);
+            this.Master.Name = "Master";
+            this.Master.Padding = new System.Windows.Forms.Padding(3);
+            this.Master.Size = new System.Drawing.Size(1305, 603);
+            this.Master.TabIndex = 1;
+            this.Master.Text = "Master";
+            this.Master.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1305, 603);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Transaksi";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1135, 603);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Laporan";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // ucMaster1
+            // 
+            this.ucMaster1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucMaster1.Location = new System.Drawing.Point(3, 3);
+            this.ucMaster1.Name = "ucMaster1";
+            this.ucMaster1.Size = new System.Drawing.Size(1299, 597);
+            this.ucMaster1.TabIndex = 0;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 725);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1541, 725);
             this.Controls.Add(this.bunifuPages1);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2Panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimumSize = new System.Drawing.Size(1563, 581);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             this.bunifuPages1.ResumeLayout(false);
+            this.Home.ResumeLayout(false);
+            this.Master.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -345,7 +401,11 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Bunifu.UI.WinForms.BunifuPages bunifuPages1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage Home;
+        private System.Windows.Forms.TabPage Master;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private Page.UCHome ucHome1;
+        private Page.UCMaster ucMaster1;
     }
 }
