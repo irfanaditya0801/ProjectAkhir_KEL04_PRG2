@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNama = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtHarga = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,6 +46,13 @@
             this.cbJenis = new System.Windows.Forms.ComboBox();
             this.cbMerk = new System.Windows.Forms.ComboBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,15 +60,16 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.tokoKameraDataSet = new ProjectAkhir_KEL04_PRG2.TokoKameraDataSet();
+            this.tblJenisKameraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblJenisKameraTableAdapter = new ProjectAkhir_KEL04_PRG2.TokoKameraDataSetTableAdapters.tblJenisKameraTableAdapter();
+            this.tblMerkKameraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblMerkKameraTableAdapter = new ProjectAkhir_KEL04_PRG2.TokoKameraDataSetTableAdapters.tblMerkKameraTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgAcc)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tokoKameraDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblJenisKameraBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblMerkKameraBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtID
@@ -142,6 +151,7 @@
             this.txtHarga.ShadowDecoration.Parent = this.txtHarga;
             this.txtHarga.Size = new System.Drawing.Size(200, 38);
             this.txtHarga.TabIndex = 40;
+            this.txtHarga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHarga_KeyPress);
             // 
             // txtJumlah
             // 
@@ -168,6 +178,7 @@
             this.txtJumlah.ShadowDecoration.Parent = this.txtJumlah;
             this.txtJumlah.Size = new System.Drawing.Size(200, 36);
             this.txtJumlah.TabIndex = 41;
+            this.txtJumlah.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtJumlah_KeyPress);
             // 
             // btnSearch
             // 
@@ -281,30 +292,30 @@
             // 
             // dgAcc
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgAcc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            this.dgAcc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
             this.dgAcc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgAcc.BackgroundColor = System.Drawing.Color.White;
             this.dgAcc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgAcc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgAcc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgAcc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgAcc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dgAcc.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgAcc.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgAcc.DefaultCellStyle = dataGridViewCellStyle24;
             this.dgAcc.EnableHeadersVisualStyles = false;
             this.dgAcc.GridColor = System.Drawing.Color.White;
             this.dgAcc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -388,6 +399,8 @@
             // 
             // cbJenis
             // 
+            this.cbJenis.DataSource = this.tblJenisKameraBindingSource;
+            this.cbJenis.DisplayMember = "nama_jenis";
             this.cbJenis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJenis.FormattingEnabled = true;
             this.cbJenis.Location = new System.Drawing.Point(215, 301);
@@ -399,6 +412,8 @@
             // 
             // cbMerk
             // 
+            this.cbMerk.DataSource = this.tblMerkKameraBindingSource;
+            this.cbMerk.DisplayMember = "nama_Merk";
             this.cbMerk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMerk.FormattingEnabled = true;
             this.cbMerk.Location = new System.Drawing.Point(213, 241);
@@ -438,6 +453,84 @@
             this.guna2Panel1.Size = new System.Drawing.Size(651, 647);
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // guna2HtmlLabel12
+            // 
+            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel12.Font = new System.Drawing.Font("STHupo", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.guna2HtmlLabel12.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(186, 12);
+            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(217, 35);
+            this.guna2HtmlLabel12.TabIndex = 64;
+            this.guna2HtmlLabel12.Text = "Kelola Kamera";
+            // 
+            // guna2HtmlLabel11
+            // 
+            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel11.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.guna2HtmlLabel11.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(75, 411);
+            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(54, 21);
+            this.guna2HtmlLabel11.TabIndex = 63;
+            this.guna2HtmlLabel11.Text = "Harga";
+            // 
+            // guna2HtmlLabel10
+            // 
+            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.guna2HtmlLabel10.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(75, 356);
+            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(60, 21);
+            this.guna2HtmlLabel10.TabIndex = 63;
+            this.guna2HtmlLabel10.Text = "Jumlah";
+            // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.guna2HtmlLabel9.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(75, 305);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(43, 21);
+            this.guna2HtmlLabel9.TabIndex = 63;
+            this.guna2HtmlLabel9.Text = "Jenis";
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(75, 248);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(45, 21);
+            this.guna2HtmlLabel8.TabIndex = 63;
+            this.guna2HtmlLabel8.Text = "Merk";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(75, 193);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(122, 21);
+            this.guna2HtmlLabel2.TabIndex = 62;
+            this.guna2HtmlLabel2.Text = "Nama Kamera";
+            // 
+            // Label
+            // 
+            this.Label.BackColor = System.Drawing.Color.Transparent;
+            this.Label.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Label.Location = new System.Drawing.Point(41, 124);
+            this.Label.Name = "Label";
+            this.Label.Size = new System.Drawing.Size(94, 21);
+            this.Label.TabIndex = 61;
+            this.Label.Text = "ID Kamera";
+            this.Label.Visible = false;
             // 
             // guna2HtmlLabel1
             // 
@@ -517,83 +610,28 @@
             this.guna2HtmlLabel4.TabIndex = 56;
             this.guna2HtmlLabel4.Text = "Jenis";
             // 
-            // guna2HtmlLabel2
+            // tokoKameraDataSet
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(75, 193);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(122, 21);
-            this.guna2HtmlLabel2.TabIndex = 62;
-            this.guna2HtmlLabel2.Text = "Nama Kamera";
+            this.tokoKameraDataSet.DataSetName = "TokoKameraDataSet";
+            this.tokoKameraDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Label
+            // tblJenisKameraBindingSource
             // 
-            this.Label.BackColor = System.Drawing.Color.Transparent;
-            this.Label.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Label.Location = new System.Drawing.Point(41, 124);
-            this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(94, 21);
-            this.Label.TabIndex = 61;
-            this.Label.Text = "ID Kamera";
-            this.Label.Visible = false;
+            this.tblJenisKameraBindingSource.DataMember = "tblJenisKamera";
+            this.tblJenisKameraBindingSource.DataSource = this.tokoKameraDataSet;
             // 
-            // guna2HtmlLabel8
+            // tblJenisKameraTableAdapter
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(75, 248);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(45, 21);
-            this.guna2HtmlLabel8.TabIndex = 63;
-            this.guna2HtmlLabel8.Text = "Merk";
+            this.tblJenisKameraTableAdapter.ClearBeforeFill = true;
             // 
-            // guna2HtmlLabel9
+            // tblMerkKameraBindingSource
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(75, 305);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(43, 21);
-            this.guna2HtmlLabel9.TabIndex = 63;
-            this.guna2HtmlLabel9.Text = "Jenis";
+            this.tblMerkKameraBindingSource.DataMember = "tblMerkKamera";
+            this.tblMerkKameraBindingSource.DataSource = this.tokoKameraDataSet;
             // 
-            // guna2HtmlLabel10
+            // tblMerkKameraTableAdapter
             // 
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.guna2HtmlLabel10.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(75, 356);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(60, 21);
-            this.guna2HtmlLabel10.TabIndex = 63;
-            this.guna2HtmlLabel10.Text = "Jumlah";
-            // 
-            // guna2HtmlLabel11
-            // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.guna2HtmlLabel11.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(75, 411);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(54, 21);
-            this.guna2HtmlLabel11.TabIndex = 63;
-            this.guna2HtmlLabel11.Text = "Harga";
-            // 
-            // guna2HtmlLabel12
-            // 
-            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.Font = new System.Drawing.Font("STHupo", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.guna2HtmlLabel12.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(186, 12);
-            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(217, 35);
-            this.guna2HtmlLabel12.TabIndex = 64;
-            this.guna2HtmlLabel12.Text = "Kelola Kamera";
+            this.tblMerkKameraTableAdapter.ClearBeforeFill = true;
             // 
             // CRUDKamera
             // 
@@ -608,6 +646,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgAcc)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tokoKameraDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblJenisKameraBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblMerkKameraBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -642,5 +683,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel Label;
+        private TokoKameraDataSet tokoKameraDataSet;
+        private System.Windows.Forms.BindingSource tblJenisKameraBindingSource;
+        private TokoKameraDataSetTableAdapters.tblJenisKameraTableAdapter tblJenisKameraTableAdapter;
+        private System.Windows.Forms.BindingSource tblMerkKameraBindingSource;
+        private TokoKameraDataSetTableAdapters.tblMerkKameraTableAdapter tblMerkKameraTableAdapter;
     }
 }

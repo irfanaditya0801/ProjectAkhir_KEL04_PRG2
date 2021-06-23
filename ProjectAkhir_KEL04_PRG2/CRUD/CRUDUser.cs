@@ -264,5 +264,10 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
         {
 
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

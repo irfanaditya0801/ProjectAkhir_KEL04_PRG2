@@ -207,5 +207,23 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
                 }
             }
         }
+
+        private void txtHarga_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                //MessageBox.Show("Nama Harus diisi dengan huruf", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtJumlah_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                //MessageBox.Show("Nama Harus diisi dengan huruf", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

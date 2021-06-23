@@ -177,5 +177,27 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void checkID_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkID.Checked)
+            {
+                labelID.Visible = true;
+                txtID.Visible = true;
+                btnSearch.Visible = true;
+                btnUbah.Visible = true;
+                btnHapus.Visible = true;
+                btnSimpan.Visible = false;
+            }
+            else
+            {
+                labelID.Visible = false;
+                txtID.Visible = false;
+                btnSearch.Visible = false;
+                btnUbah.Visible = false;
+                btnHapus.Visible = false;
+                btnSimpan.Visible = true;
+            }
+        }
     }
 }

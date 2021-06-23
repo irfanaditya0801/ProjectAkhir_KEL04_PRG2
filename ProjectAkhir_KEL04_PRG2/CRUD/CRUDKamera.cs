@@ -92,7 +92,12 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
 
         private void CRUDKamera_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'tokoKameraDataSet.tblMerkKamera' table. You can move, or remove it, as needed.
+            this.tblMerkKameraTableAdapter.Fill(this.tokoKameraDataSet.tblMerkKamera);
+            // TODO: This line of code loads data into the 'tokoKameraDataSet.tblJenisKamera' table. You can move, or remove it, as needed.
+            this.tblJenisKameraTableAdapter.Fill(this.tokoKameraDataSet.tblJenisKamera);
           
+
 
 
 
@@ -223,6 +228,24 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
         private void txtID_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtHarga_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                //MessageBox.Show("Nama Harus diisi dengan huruf", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtJumlah_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                //MessageBox.Show("Nama Harus diisi dengan huruf", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

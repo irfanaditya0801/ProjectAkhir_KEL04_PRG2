@@ -100,7 +100,7 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
                 SqlCommand add = new SqlCommand("sp_addacckamera", con);
                 add.CommandType = CommandType.StoredProcedure;
 
-                string syntax = "SELECT TOP  1 id_Acc from tblAccKamera ORDER BY id_Acc desc";
+                string syntax = "SELECT TOP  1 id_Acc from AccKamera ORDER BY id_Acc desc";
                 string id = AutoID("ACC", syntax);
 
 
@@ -136,9 +136,9 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
                 SqlCommand add = new SqlCommand("sp_updateacckamera", con);
                 add.CommandType = CommandType.StoredProcedure;
 
-                add.Parameters.AddWithValue("id_Acc", txtID.Text);
+                add.Parameters.AddWithValue("id_Acc", txtID);
                 add.Parameters.AddWithValue("nama_Acc", txtNama.Text);
-                add.Parameters.AddWithValue("id_kategor", cbJenis.SelectedValue);
+                add.Parameters.AddWithValue("id_kategori", cbJenis.SelectedValue);
                 add.Parameters.AddWithValue("harga", txtHarga.Text);
                 add.Parameters.AddWithValue("jumlah", txtJumlah.Text);
 
@@ -192,11 +192,11 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
 
                 SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
                 DataTable dt = new DataTable();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM tblAccKamera Where id_Acc = '" + txtID.Text + "'", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM AccKamera Where id_Acc = '" + txtID.Text + "'", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
 
-                txtNama.Text = dt.Rows[0]["nama_jenis"].ToString();
+                txtNama.Text = dt.Rows[0]["nama_acc"].ToString();
                 cbJenis.SelectedValue = dt.Rows[0]["id_kategori"].ToString();
                 txtHarga.Text = dt.Rows[0]["harga"].ToString();
                 txtJumlah.Text = dt.Rows[0]["jumlah"].ToString();
@@ -205,6 +205,32 @@ namespace ProjectAkhir_KEL04_PRG2.CRUD
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void btnHapus_Click_1(object sender, EventArgs e)
+        {
+            DialogResult valid = MessageBox.Show("ingin menghapus Acc Kamera ?", "Informasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (valid == DialogResult.OK)
+            {
+                SqlConnection con = new SqlConnection(@"Data Source =LAPTOP-5F5TNO0N\SQLEXPRESS; Initial Catalog =TokoKamera;Integrated Security = True;");
+
+                try
+                {
+                    con.Open();
+                    SqlCommand del = new SqlCommand("sp_deleteacckamera", con);
+                    del.CommandType = CommandType.StoredProcedure;
+
+                    del.Parameters.AddWithValue("id_Acc", txtID.Text);
+
+                    del.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil dihapus", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Data gagal di hapus : " + ex.Message);
+                }
             }
         }
     }

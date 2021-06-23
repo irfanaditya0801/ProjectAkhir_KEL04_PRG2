@@ -363,6 +363,7 @@
             this.txtJumlah.ShadowDecoration.Parent = this.txtJumlah;
             this.txtJumlah.Size = new System.Drawing.Size(200, 36);
             this.txtJumlah.TabIndex = 41;
+            this.txtJumlah.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtJumlah_KeyPress);
             // 
             // txtHarga
             // 
@@ -390,6 +391,7 @@
             this.txtHarga.Size = new System.Drawing.Size(200, 36);
             this.txtHarga.TabIndex = 40;
             this.txtHarga.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
+            this.txtHarga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHarga_KeyPress);
             // 
             // txtNama
             // 

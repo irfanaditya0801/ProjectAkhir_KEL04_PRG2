@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnHapus = new Guna.UI2.WinForms.Guna2Button();
             this.dgAcc = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnUbah = new Guna.UI2.WinForms.Guna2Button();
@@ -50,12 +50,12 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbSearch = new Guna.UI2.WinForms.Guna2CheckBox();
             this.cbJenis = new System.Windows.Forms.ComboBox();
-            this.tokoKameraDataSet = new ProjectAkhir_KEL04_PRG2.TokoKameraDataSet();
             this.tbKategoriAccBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tokoKameraDataSet = new ProjectAkhir_KEL04_PRG2.TokoKameraDataSet();
             this.tbKategoriAccTableAdapter = new ProjectAkhir_KEL04_PRG2.TokoKameraDataSetTableAdapters.tbKategoriAccTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgAcc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tokoKameraDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKategoriAccBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tokoKameraDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHapus
@@ -83,33 +83,34 @@
             this.btnHapus.Text = "Hapus";
             this.btnHapus.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
             this.btnHapus.Visible = false;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click_1);
             // 
             // dgAcc
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgAcc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgAcc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgAcc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgAcc.BackgroundColor = System.Drawing.Color.White;
             this.dgAcc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgAcc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgAcc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgAcc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgAcc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgAcc.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgAcc.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgAcc.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgAcc.EnableHeadersVisualStyles = false;
             this.dgAcc.GridColor = System.Drawing.Color.White;
             this.dgAcc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -431,7 +432,6 @@
             this.cbSearch.CheckedState.BorderRadius = 0;
             this.cbSearch.CheckedState.BorderThickness = 0;
             this.cbSearch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbSearch.Enabled = false;
             this.cbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.cbSearch.Location = new System.Drawing.Point(151, 99);
             this.cbSearch.Name = "cbSearch";
@@ -458,15 +458,15 @@
             this.cbJenis.TabIndex = 37;
             this.cbJenis.ValueMember = "id_kategori";
             // 
-            // tokoKameraDataSet
-            // 
-            this.tokoKameraDataSet.DataSetName = "TokoKameraDataSet";
-            this.tokoKameraDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tbKategoriAccBindingSource
             // 
             this.tbKategoriAccBindingSource.DataMember = "tbKategoriAcc";
             this.tbKategoriAccBindingSource.DataSource = this.tokoKameraDataSet;
+            // 
+            // tokoKameraDataSet
+            // 
+            this.tokoKameraDataSet.DataSetName = "TokoKameraDataSet";
+            this.tokoKameraDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbKategoriAccTableAdapter
             // 
@@ -503,8 +503,8 @@
             this.Text = "CRUDAccKamera";
             this.Load += new System.EventHandler(this.CRUDAccKamera_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgAcc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tokoKameraDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbKategoriAccBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tokoKameraDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
