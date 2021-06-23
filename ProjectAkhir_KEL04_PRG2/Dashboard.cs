@@ -16,5 +16,15 @@ namespace ProjectAkhir_KEL04_PRG2
         {
             InitializeComponent();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage(Home);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            bunifuPages1.SetPage(Master);
+        }
     }
 }

@@ -44,6 +44,8 @@
             this.txtNama = new Guna.UI2.WinForms.Guna2TextBox();
             this.LabelID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.PanelKategoriAcc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgKategoriAcc)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +56,8 @@
             this.PanelKategoriAcc.BackgroundImage = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.background;
             this.PanelKategoriAcc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelKategoriAcc.BorderColor = System.Drawing.Color.Transparent;
+            this.PanelKategoriAcc.Controls.Add(this.guna2ControlBox2);
+            this.PanelKategoriAcc.Controls.Add(this.guna2ControlBox1);
             this.PanelKategoriAcc.Controls.Add(this.CheckID);
             this.PanelKategoriAcc.Controls.Add(this.btnHapus);
             this.PanelKategoriAcc.Controls.Add(this.btnSearch);
@@ -69,9 +73,10 @@
             this.PanelKategoriAcc.CustomBorderColor = System.Drawing.Color.Black;
             this.PanelKategoriAcc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PanelKategoriAcc.Location = new System.Drawing.Point(0, 0);
+            this.PanelKategoriAcc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PanelKategoriAcc.Name = "PanelKategoriAcc";
             this.PanelKategoriAcc.ShadowDecoration.Parent = this.PanelKategoriAcc;
-            this.PanelKategoriAcc.Size = new System.Drawing.Size(637, 357);
+            this.PanelKategoriAcc.Size = new System.Drawing.Size(956, 549);
             this.PanelKategoriAcc.TabIndex = 1;
             this.PanelKategoriAcc.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -83,9 +88,10 @@
             this.CheckID.CheckedState.BorderThickness = 0;
             this.CheckID.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CheckID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CheckID.Location = new System.Drawing.Point(147, 102);
+            this.CheckID.Location = new System.Drawing.Point(220, 157);
+            this.CheckID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CheckID.Name = "CheckID";
-            this.CheckID.Size = new System.Drawing.Size(58, 17);
+            this.CheckID.Size = new System.Drawing.Size(88, 24);
             this.CheckID.TabIndex = 18;
             this.CheckID.Text = "Cari ID";
             this.CheckID.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -99,7 +105,7 @@
             this.btnHapus.AutoRoundedCorners = true;
             this.btnHapus.BackColor = System.Drawing.Color.Transparent;
             this.btnHapus.BorderColor = System.Drawing.Color.Transparent;
-            this.btnHapus.BorderRadius = 16;
+            this.btnHapus.BorderRadius = 26;
             this.btnHapus.CheckedState.Parent = this.btnHapus;
             this.btnHapus.CustomImages.Parent = this.btnHapus;
             this.btnHapus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -111,10 +117,11 @@
             this.btnHapus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHapus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnHapus.HoverState.Parent = this.btnHapus;
-            this.btnHapus.Location = new System.Drawing.Point(478, 173);
+            this.btnHapus.Location = new System.Drawing.Point(717, 266);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.ShadowDecoration.Parent = this.btnHapus;
-            this.btnHapus.Size = new System.Drawing.Size(102, 35);
+            this.btnHapus.Size = new System.Drawing.Size(153, 54);
             this.btnHapus.TabIndex = 17;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
@@ -138,11 +145,12 @@
             this.btnSearch.Image = global::ProjectAkhir_KEL04_PRG2.Properties.Resources.active_search_png;
             this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSearch.Location = new System.Drawing.Point(353, 58);
+            this.btnSearch.Location = new System.Drawing.Point(530, 89);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
-            this.btnSearch.Size = new System.Drawing.Size(37, 37);
+            this.btnSearch.Size = new System.Drawing.Size(56, 57);
             this.btnSearch.TabIndex = 8;
             this.btnSearch.TextFormatNoPrefix = true;
             this.btnSearch.Tile = false;
@@ -177,11 +185,12 @@
             this.dgKategoriAcc.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgKategoriAcc.EnableHeadersVisualStyles = false;
             this.dgKategoriAcc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgKategoriAcc.Location = new System.Drawing.Point(55, 195);
+            this.dgKategoriAcc.Location = new System.Drawing.Point(82, 300);
+            this.dgKategoriAcc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgKategoriAcc.Name = "dgKategoriAcc";
             this.dgKategoriAcc.RowHeadersVisible = false;
             this.dgKategoriAcc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgKategoriAcc.Size = new System.Drawing.Size(398, 117);
+            this.dgKategoriAcc.Size = new System.Drawing.Size(597, 180);
             this.dgKategoriAcc.TabIndex = 7;
             this.dgKategoriAcc.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgKategoriAcc.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -211,7 +220,7 @@
             this.btnUbah.AutoRoundedCorners = true;
             this.btnUbah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUbah.BorderColor = System.Drawing.Color.Transparent;
-            this.btnUbah.BorderRadius = 16;
+            this.btnUbah.BorderRadius = 26;
             this.btnUbah.CheckedState.Parent = this.btnUbah;
             this.btnUbah.CustomImages.Parent = this.btnUbah;
             this.btnUbah.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -223,10 +232,11 @@
             this.btnUbah.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnUbah.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnUbah.HoverState.Parent = this.btnUbah;
-            this.btnUbah.Location = new System.Drawing.Point(478, 120);
+            this.btnUbah.Location = new System.Drawing.Point(717, 185);
+            this.btnUbah.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUbah.Name = "btnUbah";
             this.btnUbah.ShadowDecoration.Parent = this.btnUbah;
-            this.btnUbah.Size = new System.Drawing.Size(102, 35);
+            this.btnUbah.Size = new System.Drawing.Size(153, 54);
             this.btnUbah.TabIndex = 6;
             this.btnUbah.Text = "Ubah";
             this.btnUbah.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
@@ -239,9 +249,10 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("STHupo", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(122, 12);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(183, 18);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(314, 30);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(471, 45);
             this.guna2HtmlLabel3.TabIndex = 5;
             this.guna2HtmlLabel3.Text = "Kategori Akesoris Kamera";
             // 
@@ -250,7 +261,7 @@
             this.btnSimpan.AutoRoundedCorners = true;
             this.btnSimpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSimpan.BorderColor = System.Drawing.Color.Transparent;
-            this.btnSimpan.BorderRadius = 16;
+            this.btnSimpan.BorderRadius = 26;
             this.btnSimpan.CheckedState.Parent = this.btnSimpan;
             this.btnSimpan.CustomImages.Parent = this.btnSimpan;
             this.btnSimpan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -262,10 +273,11 @@
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSimpan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSimpan.HoverState.Parent = this.btnSimpan;
-            this.btnSimpan.Location = new System.Drawing.Point(478, 72);
+            this.btnSimpan.Location = new System.Drawing.Point(717, 111);
+            this.btnSimpan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.ShadowDecoration.Parent = this.btnSimpan;
-            this.btnSimpan.Size = new System.Drawing.Size(102, 35);
+            this.btnSimpan.Size = new System.Drawing.Size(153, 54);
             this.btnSimpan.TabIndex = 4;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
@@ -275,7 +287,7 @@
             // 
             this.btnBatal.AutoRoundedCorners = true;
             this.btnBatal.BorderColor = System.Drawing.Color.Transparent;
-            this.btnBatal.BorderRadius = 16;
+            this.btnBatal.BorderRadius = 26;
             this.btnBatal.CheckedState.Parent = this.btnBatal;
             this.btnBatal.CustomImages.Parent = this.btnBatal;
             this.btnBatal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -287,10 +299,11 @@
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBatal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBatal.HoverState.Parent = this.btnBatal;
-            this.btnBatal.Location = new System.Drawing.Point(478, 225);
+            this.btnBatal.Location = new System.Drawing.Point(717, 346);
+            this.btnBatal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.ShadowDecoration.Parent = this.btnBatal;
-            this.btnBatal.Size = new System.Drawing.Size(102, 35);
+            this.btnBatal.Size = new System.Drawing.Size(153, 54);
             this.btnBatal.TabIndex = 4;
             this.btnBatal.Text = "Batal";
             this.btnBatal.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
@@ -301,9 +314,10 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(55, 145);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(82, 223);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(51, 21);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(76, 32);
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Nama";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
@@ -311,7 +325,7 @@
             // txtNama
             // 
             this.txtNama.AutoRoundedCorners = true;
-            this.txtNama.BorderRadius = 17;
+            this.txtNama.BorderRadius = 26;
             this.txtNama.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNama.DefaultText = "";
             this.txtNama.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -324,13 +338,14 @@
             this.txtNama.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNama.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNama.HoverState.Parent = this.txtNama;
-            this.txtNama.Location = new System.Drawing.Point(170, 141);
+            this.txtNama.Location = new System.Drawing.Point(255, 217);
+            this.txtNama.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNama.Name = "txtNama";
             this.txtNama.PasswordChar = '\0';
             this.txtNama.PlaceholderText = "";
             this.txtNama.SelectedText = "";
             this.txtNama.ShadowDecoration.Parent = this.txtNama;
-            this.txtNama.Size = new System.Drawing.Size(200, 36);
+            this.txtNama.Size = new System.Drawing.Size(300, 55);
             this.txtNama.TabIndex = 2;
             // 
             // LabelID
@@ -338,16 +353,17 @@
             this.LabelID.BackColor = System.Drawing.Color.Transparent;
             this.LabelID.Font = new System.Drawing.Font("STHupo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.LabelID.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.LabelID.Location = new System.Drawing.Point(32, 66);
+            this.LabelID.Location = new System.Drawing.Point(48, 102);
+            this.LabelID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LabelID.Name = "LabelID";
-            this.LabelID.Size = new System.Drawing.Size(102, 21);
+            this.LabelID.Size = new System.Drawing.Size(153, 32);
             this.LabelID.TabIndex = 1;
             this.LabelID.Text = "ID Kategori";
             // 
             // txtID
             // 
             this.txtID.AutoRoundedCorners = true;
-            this.txtID.BorderRadius = 17;
+            this.txtID.BorderRadius = 26;
             this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtID.DefaultText = "";
             this.txtID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -360,24 +376,51 @@
             this.txtID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtID.HoverState.Parent = this.txtID;
-            this.txtID.Location = new System.Drawing.Point(147, 59);
+            this.txtID.Location = new System.Drawing.Point(220, 91);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
             this.txtID.PlaceholderText = "";
             this.txtID.SelectedText = "";
             this.txtID.ShadowDecoration.Parent = this.txtID;
-            this.txtID.Size = new System.Drawing.Size(200, 36);
+            this.txtID.Size = new System.Drawing.Size(300, 55);
             this.txtID.TabIndex = 0;
             this.txtID.Visible = false;
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(894, 18);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 19;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(814, 18);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 20;
+            // 
             // CRUDKategoriAcc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 352);
+            this.ClientSize = new System.Drawing.Size(951, 542);
             this.Controls.Add(this.PanelKategoriAcc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CRUDKategoriAcc";
             this.Text = "CRUDKategoriAcc";
             this.Load += new System.EventHandler(this.CRUDKategoriAcc_Load);
@@ -403,5 +446,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Button btnHapus;
         private Guna.UI2.WinForms.Guna2CheckBox CheckID;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

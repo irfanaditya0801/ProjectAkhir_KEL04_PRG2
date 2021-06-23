@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,9 +17,11 @@ namespace ProjectAkhir_KEL04_PRG2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CRUD.CRUDUser());
+            Application.Run(new Dashboard());
         }
 
-        
+        public static bool IsInDesignMode() => (LicenseManager.UsageMode == LicenseUsageMode.Designtime);
+
+
     }
 }

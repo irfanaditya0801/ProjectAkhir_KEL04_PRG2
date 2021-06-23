@@ -225,6 +225,18 @@
     <Compile Include="Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page\UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\UCMaster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\UCMaster.Designer.cs">
+      <DependentUpon>UCMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TokoKameraDataSet.Designer.cs">
@@ -264,6 +276,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\UCMaster.resx">
+      <DependentUpon>UCMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -397,6 +415,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-supplier-72 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supplier-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-male-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-slr-camera-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bullet-camera-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-battery-level-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nef-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-etsy-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gg-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
